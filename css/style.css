@@ -1,0 +1,124 @@
+/* Favourite Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+font-family: 'Alegreya', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+font-family: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+font-family: 'Karla', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+font-family: 'Varela', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+font-family: 'Archivo', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+font-family: 'Montserrat', sans-serif; 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  padding: 0 60px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #46483a;
+  color: #ecf0f1;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  cursor: default;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #7b7c6e;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
